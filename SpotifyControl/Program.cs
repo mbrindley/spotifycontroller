@@ -27,7 +27,19 @@ namespace SpotifyControl
                     Controller.PreviousTrack();
                     break;
                 case "toggledevice":
-                    Controller.SwitchPlaybackDevice();
+                    if (args.Length < 3)
+                        Controller.SwitchPlaybackDevice();
+                    else
+                    {
+                        try
+                        {
+                            Controller.SwitchPlaybackDevice(int.Parse(args[1]), int.Parse(args[2]));
+                        }
+                        catch (FormatException)
+                        {
+                            Console.WriteLine("One or more arguments was invalid. Device IDs should be whole numbers from 0.");
+                        }
+                    }
                     break;
             }
         }

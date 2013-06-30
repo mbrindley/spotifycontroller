@@ -27,22 +27,21 @@ namespace SpotifyControl
             SendCommand(CmdNext);
         }
 
-        public static void SwitchPlaybackDevice()
+        public static void SwitchPlaybackDevice(int deviceId1 = 0, int deviceId2 = 1)
         {
             // Find our current default playback device
             var baseKey = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Default);
             var regKey = baseKey.CreateSubKey(@"Software\SpotifyControl", RegistryKeyPermissionCheck.ReadWriteSubTree);
-            var device = (int)regKey.GetValue("PlaybackDevice", 1);
+            var device = (int)regKey.GetValue("PlaybackDevice", deviceId1);
+            device = device == deviceId1 ? deviceId2 : deviceId1;   // Toggle which device we're using
+            regKey.SetValue("PlaybackDevice", device);
 
-            // In this case, it's either 1 (display speakers) or 2 (internal sound card aka headphones)
             Process.Start(new ProcessStartInfo(@"PlaybackDevicePicker\EndPointController.exe", device.ToString())
             {
                 UseShellExecute = false,
                 RedirectStandardOutput = true,
                 CreateNoWindow = true
             });
-
-            regKey.SetValue("PlaybackDevice", device == 1 ? 2 : 1);
         }
 
         private static void SendCommand(int command)
