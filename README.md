@@ -9,9 +9,9 @@ A Windows application for controlling Spotify, designed for use with the [Griffi
 
 Thanks to [Dave Amenta](http://www.daveamenta.com/) for the [C++ source code](http://www.daveamenta.com/2011-05/programmatically-or-command-line-change-the-default-sound-playback-device-in-windows-7/) to list and toggle audio playback devices in Windows.
 
-Also thanks to [Bjørge Næss](https://github.com/bjoerge) for the inspiration and application codes from [pytify.py](https://code.google.com/p/pytify/source/browse/trunk/pytify.py)
+Also thanks to [Bjørge Næss](https://github.com/bjoerge) for the inspiration and application command codes from [pytify.py](https://code.google.com/p/pytify/source/browse/trunk/pytify.py)
 
-## Usage ##
+## Installation ##
 
 Compile SpotifyControl.sln, copy the output to somewhere sensible (eg C:\Program Files\SpotifyControl\).
 
@@ -65,4 +65,16 @@ If you're unsure of the device IDs for your playback devices, you can run the in
 	Audio Device 0: Speakers (Display Audio)
 	Audio Device 1: LED Cinema-2 (NVIDIA High Definition Audio)
 	Audio Device 2: Speakers (Realtek High Definition Audio)
+
+## Usage ##
+
+| Action | Trigger |
+| ------------- | ------------- |
+| Turn volume up | Rotate PowerMate clockwise |
+| Turn volume down | Rotate PowerMate counter-clockwise |
+| Play/Pause | Press PowerMate's button |
+| Skip to next track | Press PowerMate's button and rotate clockwise |
+| Go back to previous track | Press PowerMate's button and rotate counter-clockwise |
+| Switch playback devices (eg speakers to headphones) | Press and hold PowerMate's button |
+
 
