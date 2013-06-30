@@ -1,10 +1,15 @@
 Spotify Controller
 ==================
 
-Windows application for controlling Spotify, designed for use with the [Griffin PowerMate](http://store.griffintechnology.com/laptops/powermate).
+A Windows application for controlling Spotify, designed for use with the [Griffin PowerMate](http://store.griffintechnology.com/laptops/powermate).
 
 ![Griffin PowerMate](http://store.griffintechnology.com/media/catalog/product/p/o/powermate-3.jpg)
 
+## Credits ##
+
+Thanks to [Dave Amenta](http://www.daveamenta.com/) for the [C++ source code](http://www.daveamenta.com/2011-05/programmatically-or-command-line-change-the-default-sound-playback-device-in-windows-7/) to list and toggle audio playback devices in Windows.
+
+Also thanks to [Bjørge Næss](https://github.com/bjoerge) for the inspiration and application codes from [pytify.py](https://code.google.com/p/pytify/source/browse/trunk/pytify.py)
 
 ## Usage ##
 
@@ -48,4 +53,16 @@ The last two parameters are important, they're the device ID that you want to sw
 	Control Panel\Hardware and Sound\Manage Audio Devices
 
 A typical configuration will look like this:
+
+![Windows Audio Manager](https://raw.github.com/mbrindley/spotifycontroller/master/Images/manage_audio.png)
+
+In this example, "Speakers" has a device ID of 0, "LED Display" is 1 and the second set of speakers is 2. I've plugged my headphones into my second set of speakers so I can switch between display speakers and my headphones using the PowerMate.
+
+If you're unsure of the device IDs for your playback devices, you can run the included utility application (created by [Dave Amenta](http://www.daveamenta.com/2011-05/programmatically-or-command-line-change-the-default-sound-playback-device-in-windows-7/)) to list playback devices and their IDs:
+
+	SpotifyControl\PlaybackDevicePicker\EndPointController.exe
+
+	Audio Device 0: Speakers (Display Audio)
+	Audio Device 1: LED Cinema-2 (NVIDIA High Definition Audio)
+	Audio Device 2: Speakers (Realtek High Definition Audio)
 
