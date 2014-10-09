@@ -3,7 +3,7 @@ Spotify Controller
 
 A Windows application for controlling Spotify, designed for use with the [Griffin PowerMate](http://store.griffintechnology.com/laptops/powermate).
 
-![Griffin PowerMate](http://store.griffintechnology.com/media/catalog/product/p/o/powermate-3.jpg)
+![Griffin PowerMate](https://raw.github.com/mbrindley/spotifycontroller/master/Images/powermate.png)
 
 ## Usage ##
 
