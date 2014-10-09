@@ -19,9 +19,9 @@ A Windows application for controlling Spotify, designed for use with the [Griffi
 
 ## Installation ##
 
-Download [SpotifyController.zip](https://github.com/mbrindley/spotifycontroller/releases/download/1.0/SpotifyController.zip)
+Download [SpotifyController.zip](https://github.com/mbrindley/spotifycontroller/releases/download/1.0/SpotifyController.zip), unzip the contents and copy to \Program Files\SpotifyControl.
 
-(Or compile SpotifyControl.sln and copy the output to Program Files)
+Alternatively, compile SpotifyControl.sln and copy the output to \Program Files\SpotifyControl.
 
 Open the PowerMate Editor and select your PowerMate device.
 
