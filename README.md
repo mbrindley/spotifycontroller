@@ -17,15 +17,11 @@ A Windows application for controlling Spotify, designed for use with the [Griffi
 | Switch playback devices (eg speakers to headphones) | Press and hold PowerMate's button |
 
 
-## Credits ##
-
-Thanks to [Dave Amenta](http://www.daveamenta.com/) for the [C++ source code](http://www.daveamenta.com/2011-05/programmatically-or-command-line-change-the-default-sound-playback-device-in-windows-7/) to list and toggle audio playback devices in Windows.
-
-Also thanks to [Bjørge Næss](https://github.com/bjoerge) for the inspiration and application command codes from [pytify.py](https://code.google.com/p/pytify/source/browse/trunk/pytify.py)
-
 ## Installation ##
 
-Compile SpotifyControl.sln, copy the output to somewhere sensible (eg C:\Program Files\SpotifyControl\).
+Download [SpotifyController.zip](https://github.com/mbrindley/spotifycontroller/releases/download/1.0/SpotifyController.zip)
+
+(Or compile SpotifyControl.sln and copy the output to Program Files)
 
 Open the PowerMate Editor and select your PowerMate device.
 
@@ -77,3 +73,10 @@ If you're unsure of the device IDs for your playback devices, you can run the in
 	Audio Device 0: Speakers (Display Audio)
 	Audio Device 1: LED Cinema-2 (NVIDIA High Definition Audio)
 	Audio Device 2: Speakers (Realtek High Definition Audio)
+
+
+## Credits ##
+
+Thanks to [Dave Amenta](http://www.daveamenta.com/) for the [C++ source code](http://www.daveamenta.com/2011-05/programmatically-or-command-line-change-the-default-sound-playback-device-in-windows-7/) to list and toggle audio playback devices in Windows.
+
+Also thanks to [Bjørge Næss](https://github.com/bjoerge) for the inspiration and application command codes from [pytify.py](https://code.google.com/p/pytify/source/browse/trunk/pytify.py)
